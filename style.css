@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Inter",sans-serif;
+    font-family: "Inter", sans-serif;
     color: #343a40;
     border-bottom: 8px solid #087f5b;
 }
@@ -13,6 +13,36 @@ body {
 .container {
     width: 960px;
     margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.navbar-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    gap: 25px;
+}
+
+.navbar-links li {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-links li:hover {
+    color: #087f5b;
+    transform: scale(1.05);
 }
 
 .hero {
@@ -224,4 +254,18 @@ footer {
 
 .chair-detail {
     margin-bottom: 48px;
+}
+
+.hover-article {
+    padding-left: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
 }
