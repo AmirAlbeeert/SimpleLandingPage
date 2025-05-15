@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Inter",sans-serif;
     color: #343a40;
     border-bottom: 8px solid #087f5b;
 }
@@ -58,7 +58,7 @@ img {
     cursor: pointer;
     border-radius: 100px;
     display: inline-block;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .article-title {
@@ -125,6 +125,12 @@ article {
 .cart-1 {
     border-radius: 12px;
     box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.cart-1:hover {
+    transform: scale(1.05);
 }
 
 .cart-1 img {
@@ -213,6 +219,7 @@ footer {
 .hero-button:hover,
 .hero-button:active {
     background-color: #099268;
+    transform: scale(1.05);
 }
 
 .chair-detail {
